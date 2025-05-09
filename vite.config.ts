@@ -7,9 +7,7 @@ export default defineConfig({
     react(),
     babel({
       babelConfig: {
-        plugins: [
-          ["babel-plugin-styled-components", { displayName: true, ssr: false }],
-        ],
+        plugins: [["babel-plugin-styled-components", { displayName: true }]],
       },
     }),
   ],
