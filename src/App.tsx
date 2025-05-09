@@ -1,15 +1,20 @@
-import Container from "./components/common/Container";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import Root from "./components/common/Root";
 import { GlobalStyle } from "./styles/GlobalStyle";
 
+import Home from "./pages/home/Home";
+
 function App() {
   return (
-    <Root>
+    <BrowserRouter>
       <GlobalStyle />
-      <Container>
-        <h1>test</h1>
-      </Container>
-    </Root>
+      <Root>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Root>
+    </BrowserRouter>
   );
 }
 
