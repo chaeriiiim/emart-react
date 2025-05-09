@@ -1,5 +1,5 @@
-import Container from "./components/Container";
-import Root from "./components/Root";
+import Container from "./components/common/Container";
+import Root from "./components/common/Root";
 import { GlobalStyle } from "./styles/GlobalStyle";
 
 function App() {
