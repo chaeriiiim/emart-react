@@ -7,8 +7,8 @@ const Test = styled.div`
 
 export default function Header() {
   return (
-    <>
+    <div>
       <Test>test!</Test>
-    </>
+    </div>
   );
 }

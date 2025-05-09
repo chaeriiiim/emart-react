@@ -9,9 +9,6 @@ function Layout() {
     <Root>
       <Header />
       <Container>
-        <div style={{ height: 300, backgroundColor: "yellow" }}>
-          🚨 여기가 Container다
-        </div>
         <Outlet />
       </Container>
       <Footer />
