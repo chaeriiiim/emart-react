@@ -7,7 +7,7 @@ function App() {
     <Root>
       <GlobalStyle />
       <Container>
-        <h1>hi!</h1>
+        <h1>test</h1>
       </Container>
     </Root>
   );
