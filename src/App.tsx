@@ -1,10 +1,20 @@
-import "./App.css";
+import { Container } from "./components/Container";
+import { Root } from "./components/Root";
+import { GlobalStyle } from "./styles/GlobalStyle";
 
 function App() {
   return (
-    <>
-      <p>하이!</p>
-    </>
+    <Root>
+      <GlobalStyle />
+      <header>
+        <Container></Container>
+      </header>
+      <main>
+        <Container>
+          <h1>test</h1>
+        </Container>
+      </main>
+    </Root>
   );
 }
 
