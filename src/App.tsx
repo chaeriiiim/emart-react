@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { GlobalStyle } from "./styles/GlobalStyle";
 
+import Layout from "./components/layout/Layout";
 import Home from "./pages/home/Home";
 
 function App() {
@@ -9,7 +10,9 @@ function App() {
     <BrowserRouter>
       <GlobalStyle />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing:border-box;
   }
 
-  html, body {
+  html, body, #root {
     width:100%;
     height :100%;
     font-family:'Noto Sans KR', 'sans-serif;
