@@ -27,6 +27,7 @@ const color = {
   gray800: "#444444",
   gray900: "#222222",
 };
+
 const theme = {
   fontSize,
   color,
