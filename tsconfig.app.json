@@ -20,7 +20,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /*styled-components 타입 적용 추가 */
+    "types": ["styled-components"],
+    "typeRoots": ["./node_modules/@types", "./src"]
   },
   "include": ["src"]
 }
