@@ -2,6 +2,10 @@ import { useState } from "react";
 import Logo from "../../assets/e-mart_logo.svg";
 import HeaderOnClick from "./HeaderOnClick";
 
+// import styled from "styled-components";
+
+// const HeaderInnerWrapper = styled
+
 export default function Header() {
   const [inputValue, setInputValue] = useState("");
 
