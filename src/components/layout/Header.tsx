@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type ChangeEvent, type JSX } from "react";
 import Logo from "../../assets/e-mart_logo.svg";
 import HeaderOnClick from "./HeaderOnClick";
 
@@ -63,15 +63,15 @@ const SearchButton = styled.button`
 `;
 
 const HeaderOnClickWrapper = styled.div`
-  flexgrow: 1;
+  flex-grow: 1;
   display: flex;
   justify-content: flex-end;
 `;
 
-export default function Header() {
-  const [inputValue, setInputValue] = useState("");
+export default function Header(): JSX.Element {
+  const [inputValue, setInputValue] = useState<string>("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
     setInputValue(e.target.value);
     console.log(e.target.value);
   };
@@ -80,7 +80,7 @@ export default function Header() {
     <Root>
       <HeaderWrapper>
         <HeaderInnerWrapper>
-          <LogoImg src={Logo} />
+          <LogoImg src={Logo} alt="이마트 로고" />
           <InputWrapper>
             <SearchInput
               type="text"
