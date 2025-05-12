@@ -68,6 +68,24 @@ export default function Header() {
               버튼
             </button>
           </div>
+          <div
+            style={{
+              width: "400px",
+              height: "44px",
+              backgroundColor: "#FFDA6C",
+              borderRadius: "22px",
+              display: "flex",
+              alignItems: "center",
+              padding: "0px 10px 0px 16px",
+            }}
+          >
+            <div style={{ justifyContent: "space-between" }}>
+              <span style={{ fontWeight: "bold" }}>
+                로그인 후 쓱-배송시간을 확인해보세요
+              </span>
+              <button>버튼</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
