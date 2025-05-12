@@ -1,18 +1,13 @@
 import { useState } from "react";
-import DownArrow from "../../assets/downArrow.png";
 import Logo from "../../assets/e-mart_logo.svg";
+import HeaderOnClick from "./HeaderOnClick";
 
 export default function Header() {
   const [inputValue, setInputValue] = useState("");
-  const [isOpen, setIsopen] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
     console.log(e.target.value);
-  };
-
-  const handleToggle = () => {
-    setIsopen((prev) => !prev);
   };
 
   return (
@@ -77,43 +72,7 @@ export default function Header() {
           <div
             style={{ flexGrow: 1, display: "flex", justifyContent: "flex-end" }}
           >
-            <div
-              style={{
-                width: "400px",
-                height: "44px",
-                backgroundColor: "#FFDA6C",
-                borderRadius: "22px",
-                display: "flex",
-                alignItems: "center",
-                padding: "0px 10px 0px 16px",
-                justifyContent: "space-between",
-              }}
-              onClick={handleToggle}
-            >
-              <span style={{ fontWeight: "bold", fontSize: "14px" }}>
-                로그인 후 쓱-배송시간을 확인해보세요
-              </span>
-              <button>
-                <img
-                  src={DownArrow}
-                  alt="검색"
-                  style={{
-                    width: "9px",
-                    height: "9px",
-                    objectFit: "contain",
-                  }}
-                />
-              </button>
-              {isOpen && (
-                <div
-                  style={{
-                    width: "400px",
-                    height: "92px",
-                    backgroundColor: "white",
-                  }}
-                ></div>
-              )}
-            </div>
+            <HeaderOnClick />
           </div>
         </div>
       </div>
