@@ -24,12 +24,11 @@ export default function Header() {
         justifyContent: "center",
       }}
     >
-      <div style={{ width: "1280px", height: "100%", border: "1px solid red" }}>
+      <div style={{ width: "1280px", height: "100%" }}>
         <div
           style={{
             width: "1280px",
             height: "100%",
-            border: "1px solid red",
             display: "flex",
             alignItems: "center",
             gap: "24px",
