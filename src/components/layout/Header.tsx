@@ -1,3 +1,5 @@
+import Logo from "../../assets/e-mart_logo.svg";
+
 export default function Header() {
   return (
     <div
@@ -10,7 +12,20 @@ export default function Header() {
       }}
     >
       <div style={{ width: "1280px", height: "100%", border: "1px solid red" }}>
-        <img src=""></img>
+        <img src={Logo} style={{ width: "160px", height: "56px" }}></img>
+        <input
+          type="text"
+          placeholder="AD) 켈로그 첵스 신제품 출시"
+          style={{
+            borderRadius: "20px",
+            border: "none",
+            outline: "none",
+            backgroundColor: "#f5f5f5",
+            width: "320px",
+            height: "44px",
+            padding: "6px 52px 6px 16px",
+          }}
+        ></input>
       </div>
     </div>
   );
