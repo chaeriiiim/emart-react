@@ -2,9 +2,28 @@ import { useState } from "react";
 import Logo from "../../assets/e-mart_logo.svg";
 import HeaderOnClick from "./HeaderOnClick";
 
-// import styled from "styled-components";
+import styled from "styled-components";
 
-// const HeaderInnerWrapper = styled
+const Root = styled.div`
+  width: 100%;
+  height: 72px;
+  background-color: #ffd040;
+  display: flex;
+  justify-content: center;
+`;
+
+const HeaderWrapper = styled.div`
+  width: 1280px;
+  height: 100%;
+`;
+
+const HeaderInnerWrapper = styled.div`
+  width: 1280px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+`;
 
 export default function Header() {
   const [inputValue, setInputValue] = useState("");
@@ -15,26 +34,10 @@ export default function Header() {
   };
 
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "72px",
-        backgroundColor: "#ffd040",
-        display: "flex",
-        justifyContent: "center",
-      }}
-    >
-      <div style={{ width: "1280px", height: "100%" }}>
-        <div
-          style={{
-            width: "1280px",
-            height: "100%",
-            display: "flex",
-            alignItems: "center",
-            gap: "24px",
-          }}
-        >
-          <img src={Logo} style={{ width: "160px", height: "56px" }}></img>
+    <Root>
+      <HeaderWrapper>
+        <HeaderInnerWrapper style={{}}>
+          <img src={Logo} style={{ width: "160px", height: "56px" }} />
           <div style={{ position: "relative", width: "320px" }}>
             <input
               type="text"
@@ -77,8 +80,8 @@ export default function Header() {
           >
             <HeaderOnClick />
           </div>
-        </div>
-      </div>
-    </div>
+        </HeaderInnerWrapper>
+      </HeaderWrapper>
+    </Root>
   );
 }
