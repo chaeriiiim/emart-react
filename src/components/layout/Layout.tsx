@@ -1,5 +1,6 @@
 import Footer from "../layout/Footer";
 import Header from "../layout/Header";
+import HeaderNav from "../layout/HeaderNav";
 
 import { Outlet } from "react-router-dom";
 import styled from "styled-components";
@@ -20,7 +21,7 @@ const Container = styled.div`
 export default function Layout() {
   return (
     <Root>
-      {/* /<HeaderNav /> */}
+      <HeaderNav />
       <Header />
       <Container>
         <Outlet />
