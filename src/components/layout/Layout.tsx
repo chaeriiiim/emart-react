@@ -1,14 +1,16 @@
 import Footer from "../layout/Footer";
 import Header from "../layout/Header";
-import HeaderNav from "../layout/HeaderNav";
+import HeaderNav from "./HeaderNav";
 
 import { Outlet } from "react-router-dom";
 import styled from "styled-components";
 
-const Root = styled.div`
+const LayoutRoot = styled.div`
   width: 100%;
   min-height: 100vh;
   background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
 `;
 
 const Container = styled.div`
@@ -20,13 +22,13 @@ const Container = styled.div`
 
 export default function Layout() {
   return (
-    <Root>
+    <LayoutRoot>
       <HeaderNav />
       <Header />
       <Container>
         <Outlet />
       </Container>
       <Footer />
-    </Root>
+    </LayoutRoot>
   );
 }

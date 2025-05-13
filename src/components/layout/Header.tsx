@@ -4,20 +4,16 @@ import HeaderOnClick from "./HeaderOnClick";
 
 import styled from "styled-components";
 
-const Root = styled.div`
+const HeaderRoot = styled.div`
   width: 100%;
   height: 72px;
   background-color: #ffd040;
   display: flex;
   justify-content: center;
+  border: 1px solid red;
 `;
 
 const HeaderWrapper = styled.div`
-  width: 1280px;
-  height: 100%;
-`;
-
-const HeaderInnerWrapper = styled.div`
   width: 1280px;
   height: 100%;
   display: flex;
@@ -77,24 +73,22 @@ export default function Header(): JSX.Element {
   };
 
   return (
-    <Root>
+    <HeaderRoot>
       <HeaderWrapper>
-        <HeaderInnerWrapper>
-          <LogoImg src={Logo} alt="이마트 로고" />
-          <InputWrapper>
-            <SearchInput
-              type="text"
-              placeholder="AD) 켈로그 첵스 신제품 출시"
-              onChange={handleChange}
-              value={inputValue}
-            />
-            <SearchButton>버튼</SearchButton>
-          </InputWrapper>
-          <HeaderOnClickWrapper>
-            <HeaderOnClick />
-          </HeaderOnClickWrapper>
-        </HeaderInnerWrapper>
+        <LogoImg src={Logo} alt="이마트 로고" />
+        <InputWrapper>
+          <SearchInput
+            type="text"
+            placeholder="AD) 켈로그 첵스 신제품 출시"
+            onChange={handleChange}
+            value={inputValue}
+          />
+          <SearchButton>버튼</SearchButton>
+        </InputWrapper>
+        <HeaderOnClickWrapper>
+          <HeaderOnClick />
+        </HeaderOnClickWrapper>
       </HeaderWrapper>
-    </Root>
+    </HeaderRoot>
   );
 }

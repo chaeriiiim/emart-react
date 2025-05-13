@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
 
   html, body, #root {
     width:100%;
-    height :100%;
+    min-height:100vh;
     font-family:'Noto Sans KR', 'sans-serif;
     background-color:#fff;
     color:#000;
