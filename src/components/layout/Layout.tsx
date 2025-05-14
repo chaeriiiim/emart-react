@@ -1,5 +1,6 @@
 import Footer from "../layout/Footer";
 import Header from "../layout/Header";
+import HeaderCategory from "./HeaderCategory";
 import HeaderNav from "./HeaderNav";
 
 import { Outlet } from "react-router-dom";
@@ -25,6 +26,7 @@ export default function Layout() {
     <LayoutRoot>
       <HeaderNav />
       <Header />
+      <HeaderCategory />
       <Container>
         <Outlet />
       </Container>
