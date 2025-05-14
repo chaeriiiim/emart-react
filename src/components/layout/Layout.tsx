@@ -17,8 +17,6 @@ const LayoutRoot = styled.div`
 const Container = styled.div`
   width: 1280px;
   margin: 0 auto;
-  border: 2px dashed red;
-  padding: 2rem;
 `;
 
 export default function Layout() {
