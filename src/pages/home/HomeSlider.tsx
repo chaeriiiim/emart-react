@@ -4,7 +4,6 @@ export default function HomeSlider() {
       style={{
         width: "100%",
         height: "500px",
-        border: "1px solid red",
         display: "flex",
         gap: "24px",
       }}
