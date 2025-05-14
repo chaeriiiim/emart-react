@@ -29,8 +29,17 @@ const CategoryButton = styled.div`
   }
 
   & span {
-    margin: 0 0 0 18px;
+    margin: 0 0 0 12px;
     font-weight: bold;
+  }
+`;
+
+const CategoryList = styled.div`
+  display: flex;
+  gap: 20px;
+
+  & ul > li {
+    font-size: 14px;
   }
 `;
 
@@ -58,15 +67,15 @@ export default function HeaderCategory() {
           <span>전체 카테고리</span>
         </CategoryButton>
 
-        <div style={{ display: "flex", gap: "20px" }}>
+        <CategoryList>
           {category.map((item, index) => (
             <ul key={index}>
-              <li style={{ fontSize: "14px" }}>
+              <li>
                 <a href={item.href}>{item.name}</a>
               </li>
             </ul>
           ))}
-        </div>
+        </CategoryList>
       </CategoryInnerWrapper>
     </CategoryWrapper>
   );
