@@ -21,20 +21,46 @@ const NavList = styled.ul`
   gap: 12px;
 `;
 
+const NavItem = styled.li`
+  font-size: 12px;
+  color: #666;
+  position: relative;
+  padding-right: 12px;
+
+  &:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    color: #ccc;
+    padding-left: 12px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+
+    &:first-child {
+      font-weight: bold;
+      color: #000;
+    }
+  }
+`;
+
 export default function HeaderNav() {
   return (
     <NavWrapper>
       <Logo src={SSGLogo} alt="ssg 로고" />
       <NavList>
-        <li style={{ fontSize: "12px", fontWeight: "bold" }}>
+        <NavItem>
           <a href="#">이마트몰</a>
-        </li>
-        <li style={{ fontSize: "12px" }}>
+        </NavItem>
+        <NavItem>
           <a href="#">신세계몰</a>
-        </li>
-        <li style={{ fontSize: "12px" }}>
+        </NavItem>
+        <NavItem>
           <a href="#">신세계백화점</a>
-        </li>
+        </NavItem>
       </NavList>
     </NavWrapper>
   );

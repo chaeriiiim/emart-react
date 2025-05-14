@@ -5,12 +5,11 @@ import HeaderOnClick from "./HeaderOnClick";
 import styled from "styled-components";
 
 const HeaderRoot = styled.div`
-  width: 100%;
-  height: 72px;
+  // width: 100%;
+  // height: 72px;
   background-color: #ffd040;
   display: flex;
   justify-content: center;
-  border: 1px solid red;
 `;
 
 const HeaderWrapper = styled.div`
