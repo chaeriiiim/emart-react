@@ -1,34 +1,37 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-  /* 기본 초기화 */
-  * {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+  /* 박스 모델 통일 */
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
-  html, body, #root {
-    width:100%;
-    min-height:100vh;
-    font-family:'Noto Sans KR', 'sans-serif;
-    background-color:#fff;
-    color:#000;
+  /* 문서 구조 */
+  html, body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fff;
+    color: #000;
   }
 
-  a{
-    text-decoration:none;
-    color:inherit;
+  /* 기본 링크 및 목록 초기화 */
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 
-  ul, li{
-    list-style:none;
+  ul, ol, li {
+    list-style: none;
   }
 
+  /* 버튼 초기화 */
   button {
-    border : none;
-    background:none;
-    cursor : pointer;
-    font-family:inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
   }
 `;

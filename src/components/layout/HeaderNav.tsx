@@ -8,7 +8,6 @@ const NavWrapper = styled.div`
   margin: 0 auto;
   display: flex;
   align-items: center;
-  border: 1px solid red;
 `;
 
 const Logo = styled.img`
@@ -18,7 +17,7 @@ const Logo = styled.img`
 
 const NavList = styled.ul`
   display: flex;
-  gap: 12px;
+  margin: 0 0 0 12px;
 `;
 
 const NavItem = styled.li`
