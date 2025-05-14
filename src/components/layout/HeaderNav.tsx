@@ -28,10 +28,11 @@ const NavItem = styled.li`
 
   &:not(:last-child)::after {
     content: "|";
-    position: absolute;
+    position: block;
     right: 0;
-    color: #ccc;
-    padding-left: 12px;
+    color: #e5e5e5;
+    // padding-left: 12px;
+    margin-left: 8px;
   }
 
   a {
