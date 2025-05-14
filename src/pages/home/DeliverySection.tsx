@@ -1,6 +1,13 @@
 export default function DeliverySection() {
   return (
-    <div style={{ width: "100%", height: "100%", border: "1px solid red" }}>
+    <div
+      style={{
+        marginTop: "40px",
+        width: "100%",
+        height: "100%",
+        border: "1px solid red",
+      }}
+    >
       <p style={{ fontSize: "20px", fontWeight: "bold", margin: "0 0 20px" }}>
         배송서비스별 매장 바로가기
       </p>
