@@ -1,4 +1,5 @@
 import Tap from "../../components/common/Tap";
+import SectionTitle from "./SectionTitle";
 
 const tabsData = [
   { id: "banner_1", label: "오반장" },
@@ -18,6 +19,7 @@ export default function MallSection() {
         border: "1px solid red",
       }}
     >
+      <SectionTitle title="지금 세일 중인 상품이에요" />
       <Tap tabs={tabsData} />
     </div>
   );
