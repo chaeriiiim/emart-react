@@ -1,3 +1,5 @@
+import BannerImg from "../../assets/banner_1.webp";
+
 export default function Banner() {
   return (
     <div
@@ -7,6 +9,8 @@ export default function Banner() {
         backgroundColor: "black",
         marginTop: "120px",
       }}
-    ></div>
+    >
+      <img src={BannerImg} style={{ width: "1280px", height: "120px" }} />
+    </div>
   );
 }
