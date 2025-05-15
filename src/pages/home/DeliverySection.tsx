@@ -1,16 +1,21 @@
+import styled from "styled-components";
+
+const DeliveryWrapper = styled.div`
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
+`;
+
+const Title = styled.p`
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 20px;
+`;
+
 export default function DeliverySection() {
   return (
-    <div
-      style={{
-        marginTop: "40px",
-        width: "100%",
-        height: "100%",
-        border: "1px solid red",
-      }}
-    >
-      <p style={{ fontSize: "20px", fontWeight: "bold", margin: "0 0 20px" }}>
-        배송서비스별 매장 바로가기
-      </p>
+    <DeliveryWrapper>
+      <Title>배송서비스별 매장 바로가기</Title>
 
       <div>
         <a
@@ -22,6 +27,7 @@ export default function DeliverySection() {
             height: "92px",
             backgroundColor: "#f5f5f5",
             borderRadius: "8px",
+            paddingLeft: "24px",
           }}
         >
           <img
@@ -34,23 +40,26 @@ export default function DeliverySection() {
               borderRadius: "8px",
             }}
           />
-          <div>
+          <div style={{ marginLeft: "12px" }}>
             <div
               style={{
-                border: "1px solid red",
+                height: "24px",
+                border: "1px solid #cfcfcf",
                 borderRadius: "12px",
-                display: "flex",
+                display: "inline-flex",
                 alignItems: "center",
                 justifyContent: "center",
-                margin: "0 4px 0 12px",
+                marginBottom: "8px",
+                padding: "2px 10px",
+                fontSize: "12px",
               }}
             >
-              <p>쓱 주간배송</p>
+              <span>쓱 주간배송</span>
             </div>
             <p>원하는걸 원하는 시간에</p>
           </div>
         </a>
       </div>
-    </div>
+    </DeliveryWrapper>
   );
 }
