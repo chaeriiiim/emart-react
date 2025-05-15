@@ -1,4 +1,4 @@
-export default function Button() {
+export default function HomePageButton() {
   return (
     <button
       style={{ width: "480px", height: "60px", border: "1px solid #e5e5e5" }}

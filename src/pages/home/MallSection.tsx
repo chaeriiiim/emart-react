@@ -1,4 +1,4 @@
-import Button from "../../components/common/Button";
+import HomePageButton from "../../components/common/HomePageButton";
 import Tap from "../../components/common/Tap";
 import SectionTitle from "./SectionTitle";
 
@@ -22,7 +22,7 @@ export default function MallSection() {
     >
       <SectionTitle title="지금 세일 중인 상품이에요" />
       <Tap tabs={tabsData} />
-      <Button />
+      <HomePageButton />
     </div>
   );
 }
