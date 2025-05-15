@@ -7,13 +7,9 @@ interface TabsItem {
   label: string;
 }
 
-const tabs: TabsItem[] = [
-  { id: "banner_1", label: "오반장" },
-  { id: "banner_2", label: "1+1" },
-  { id: "banner_3", label: "마감세일" },
-  { id: "banner_4", label: "이마트 전단행사" },
-  { id: "banner_5", label: "트레이더스 점포행사" },
-];
+interface TabsProps {
+  tabs: TabsItem[];
+}
 
 const TapWrapper = styled.div`
   width: 100%;
@@ -37,18 +33,15 @@ const TapInnerWrapper = styled.div<{ active: boolean }>`
   }
 `;
 
-export default function Tap() {
-  const [activeTab, setActiveTab] = useState<string>("banner_1");
+export default function Tap({ tabs }: TabsProps) {
+  const [activeTab, setActiveTab] = useState<string>(tabs[0].id);
 
   return (
     <TapWrapper>
       {tabs.map((tab) => (
         <TapInnerWrapper
           key={tab.id}
-          onClick={(e) => {
-            e.preventDefault();
-            setActiveTab(tab.id);
-          }}
+          onClick={() => setActiveTab(tab.id)}
           active={activeTab === tab.id}
         >
           <p>{tab.label}</p>
