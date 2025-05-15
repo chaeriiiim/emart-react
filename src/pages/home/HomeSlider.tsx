@@ -6,6 +6,7 @@ export default function HomeSlider() {
         height: "500px",
         display: "flex",
         gap: "24px",
+        marginTop: "30px",
       }}
     >
       <div>

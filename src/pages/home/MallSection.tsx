@@ -1,3 +1,5 @@
+import Tap from "../../components/common/Tap";
+
 export default function MallSection() {
   return (
     <div
@@ -7,6 +9,8 @@ export default function MallSection() {
         border: "1px solid red",
         marginTop: "120px",
       }}
-    ></div>
+    >
+      <Tap />
+    </div>
   );
 }
