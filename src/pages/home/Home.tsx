@@ -1,6 +1,7 @@
 import Banner from "../../components/common/Banner";
 import DeliverySection from "./DeliverySection";
 import HomeSlider from "./HomeSlider";
+import MallSection from "./MallSection";
 
 import BannerImg from "../../assets/banner_1.webp";
 
@@ -17,6 +18,7 @@ export default function Home() {
         titleColor="#fff"
         descColor="#fff"
       />
+      <MallSection />
     </div>
   );
 }
