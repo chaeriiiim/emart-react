@@ -12,34 +12,38 @@ const Title = styled.p`
   margin: 0 0 20px;
 `;
 
+const DeliveryButton = styled.div``;
+
+const DeliveryLink = styled.a`
+  display: flex;
+  align-items: center;
+  width: 314px;
+  height: 92px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding-left: 24px;
+
+  & img {
+    width: 60px;
+    height: 60px;
+    // objectFit: cover;
+    border-radius: 8px;
+  }
+`;
+
 export default function DeliverySection() {
   return (
     <DeliveryWrapper>
       <Title>배송서비스별 매장 바로가기</Title>
 
-      <div>
-        <a
-          href="#"
-          style={{
-            display: "flex",
-            alignItems: "center",
-            width: "314px",
-            height: "92px",
-            backgroundColor: "#f5f5f5",
-            borderRadius: "8px",
-            paddingLeft: "24px",
-          }}
-        >
+      <DeliveryButton>
+        <DeliveryLink href="#">
+          {/* map 적용시 href 각 다른 값 */}
           <img
             src="https://sui.ssgcdn.com/ui/grocery/img/emall_main/circle/img_delivery_circle_morning@2x.png"
             alt="배송 서비스 버튼"
-            style={{
-              width: "60px",
-              height: "60px",
-              // objectFit: "cover",
-              borderRadius: "8px",
-            }}
           />
+          {/* map 적용시 src , alt 각 다른 요소 */}
           <div style={{ marginLeft: "12px" }}>
             <div
               style={{
@@ -58,8 +62,8 @@ export default function DeliverySection() {
             </div>
             <p>원하는걸 원하는 시간에</p>
           </div>
-        </a>
-      </div>
+        </DeliveryLink>
+      </DeliveryButton>
     </DeliveryWrapper>
   );
 }
