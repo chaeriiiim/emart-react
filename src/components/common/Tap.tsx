@@ -2,12 +2,12 @@ import { useState } from "react";
 
 import styled from "styled-components";
 
-interface tabsItem {
+interface TabsItem {
   id: string;
   label: string;
 }
 
-const tabs: tabsItem[] = [
+const tabs: TabsItem[] = [
   { id: "banner_1", label: "오반장" },
   { id: "banner_2", label: "1+1" },
   { id: "banner_3", label: "마감세일" },
@@ -39,6 +39,7 @@ const TapInnerWrapper = styled.div<{ active: boolean }>`
 
 export default function Tap() {
   const [activeTab, setActiveTab] = useState<string>("banner_1");
+
   return (
     <TapWrapper>
       {tabs.map((tab) => (
