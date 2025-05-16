@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+
+interface MoreViewButtonProps {}
 
 const MoreViewButtonWrapper = styled.div`
   display: flex;
@@ -15,9 +18,15 @@ const MoreViewButton = styled.button`
 `;
 
 export default function HomePageButton() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/");
+  };
+
   return (
     <MoreViewButtonWrapper>
-      <MoreViewButton>오반장 전체보기</MoreViewButton>
+      <MoreViewButton onClick={handleClick}>오반장 전체보기</MoreViewButton>
     </MoreViewButtonWrapper>
   );
 }
