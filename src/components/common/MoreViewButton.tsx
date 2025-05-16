@@ -1,7 +1,11 @@
 import { useNavigate } from "react-router-dom";
+
 import styled from "styled-components";
 
-interface MoreViewButtonProps {}
+interface MoreViewButtonProps {
+  path: string;
+  title: string;
+}
 
 const MoreViewButtonWrapper = styled.div`
   display: flex;
@@ -9,7 +13,7 @@ const MoreViewButtonWrapper = styled.div`
   align-items: center;
 `;
 
-const MoreViewButton = styled.button`
+const MoreViewButtonSetting = styled.button`
   width: 480px;
   height: 60px;
   border: 1px solid #e5e5e5;
@@ -17,16 +21,18 @@ const MoreViewButton = styled.button`
   color: #666666;
 `;
 
-export default function HomePageButton() {
+export default function MoreViewButton({ title, path }: MoreViewButtonProps) {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/");
+    navigate(path);
   };
 
   return (
     <MoreViewButtonWrapper>
-      <MoreViewButton onClick={handleClick}>오반장 전체보기</MoreViewButton>
+      <MoreViewButtonSetting onClick={handleClick}>
+        {title}
+      </MoreViewButtonSetting>
     </MoreViewButtonWrapper>
   );
 }
