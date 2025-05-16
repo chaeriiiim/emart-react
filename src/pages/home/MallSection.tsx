@@ -22,7 +22,7 @@ export default function MallSection() {
     >
       <SectionTitle title="지금 세일 중인 상품이에요" />
       <Tap tabs={tabsData} />
-      <MoreViewButton />
+      <MoreViewButton path="/a" title="오반장 전체보기" />
     </div>
   );
 }
