@@ -1,4 +1,5 @@
 import ProductImg from "../../assets/product_1.avif";
+import DeliveryMark from "../../components/common/DeliveryMark";
 
 export default function MallSectionBox() {
   return (
@@ -18,6 +19,7 @@ export default function MallSectionBox() {
             alt="제품 이미지"
             style={{ width: "302px", height: "302px" }}
           />
+          <DeliveryMark />
           <span style={{ fontSize: "14px", fontWeight: "bold" }}>
             CJ제일제당
           </span>
