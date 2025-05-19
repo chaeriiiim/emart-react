@@ -1,4 +1,6 @@
+import dawnDeliveryMark from "../../assets/dawnDeliveryMark.avif";
 import ProductImg from "../../assets/product_1.avif";
+
 import DeliveryMark from "../../components/common/DeliveryMark";
 
 export default function MallSectionBox() {
@@ -19,7 +21,8 @@ export default function MallSectionBox() {
             alt="제품 이미지"
             style={{ width: "302px", height: "302px" }}
           />
-          <DeliveryMark />
+          <DeliveryMark src={dawnDeliveryMark} alt="새벽배송마크" />
+          {/* mark는 있을수도 있고 없을 수도 있음 */}
           <span style={{ fontSize: "14px", fontWeight: "bold" }}>
             CJ제일제당
           </span>
