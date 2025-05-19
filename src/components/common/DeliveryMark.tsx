@@ -1,13 +1,22 @@
-import dawnDeliveryMark from "../../assets/dawnDeliveryMark.avif";
+import styled from "styled-components";
 
-export default function DeliveryMark() {
+interface DeliveryMarkProps {
+  src: string;
+  alt: string;
+}
+
+const DeliveryMarkWrapper = styled.div`
+  line-height: 24px;
+
+  & img {
+    width: 60px;
+    height: 20px;
+  }
+`;
+export default function DeliveryMark({ src, alt }: DeliveryMarkProps) {
   return (
-    <div style={{ lineHeight: "24px" }}>
-      <img
-        src={dawnDeliveryMark}
-        alt="새벽배송마크"
-        style={{ width: "60px", height: "20px" }}
-      />
-    </div>
+    <DeliveryMarkWrapper>
+      <img src={src} alt={alt} />
+    </DeliveryMarkWrapper>
   );
 }
