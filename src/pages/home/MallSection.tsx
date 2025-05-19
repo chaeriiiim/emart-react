@@ -1,6 +1,6 @@
 import MoreViewButton from "../../components/common/MoreViewButton";
 import Tap from "../../components/common/Tap";
-import MallSectionBox from "./MallSectionBox";
+import MallProductList from "./MallProductList";
 import SectionTitle from "./SectionTitle";
 
 import styled from "styled-components";
@@ -25,7 +25,7 @@ export default function MallSection() {
     <MallSectionWrapper style={{}}>
       <SectionTitle title="지금 세일 중인 상품이에요" />
       <Tap tabs={tabsData} />
-      <MallSectionBox />
+      <MallProductList />
       <MoreViewButton path="/a" title="오반장 전체보기" />
     </MallSectionWrapper>
   );
