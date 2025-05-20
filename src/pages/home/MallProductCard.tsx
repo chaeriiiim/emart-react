@@ -3,6 +3,7 @@ import DeliveryMark from "../../components/common/DeliveryMark";
 import styled from "styled-components";
 
 const ProductListLink = styled.a`
+  width: 302px;
   & div {
     line-height: 24px;
   }
