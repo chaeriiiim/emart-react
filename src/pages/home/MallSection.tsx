@@ -1,4 +1,5 @@
 // import MoreViewButton from "../../components/common/MoreViewButton";
+import MoreViewButton from "../../components/common/MoreViewButton";
 import Tap from "../../components/common/Tap";
 import MallProductList from "./MallProductList";
 import SectionTitle from "./SectionTitle";
@@ -49,7 +50,7 @@ const mockProducts = [
 
 const MallSectionWrapper = styled.div`
   width: 100%;
-  height: 600px;
+
   margin-top: 120px;
 `;
 
@@ -67,7 +68,7 @@ export default function MallSection() {
       <SectionTitle title="지금 세일 중인 상품이에요" />
       <Tap tabs={tabsData} />
       <MallProductList products={mockProducts} />
-      {/* <MoreViewButton path="/a" title="오반장 전체보기" /> */}
+      <MoreViewButton path="/a" title="오반장 전체보기" />
     </MallSectionWrapper>
   );
 }
