@@ -46,6 +46,10 @@ const ProductPrice = styled.p`
   line-height: 24px;
 `;
 
+const ProductTitleWrapper = styled.div`
+  padding: 8px 0px;
+`;
+
 export interface ProductCardProps {
   href: string;
   imgSrc: string;
@@ -75,10 +79,14 @@ export default function MallProductCard({
         <ProductImgWrapper badge={badgeImg}>
           <ProductImg src={imgSrc} alt={imgAlt} />
         </ProductImgWrapper>
-        {markSrc && <DeliveryMark src={markSrc} alt={markAlt ?? "배송마크"} />}
-        <ProductComponyName>{componyName}</ProductComponyName>
-        <ProductName>{productName}</ProductName>
-        <ProductPrice>{productPrice}</ProductPrice>
+        <ProductTitleWrapper>
+          {markSrc && (
+            <DeliveryMark src={markSrc} alt={markAlt ?? "배송마크"} />
+          )}
+          <ProductComponyName>{componyName}</ProductComponyName>
+          <ProductName>{productName}</ProductName>
+          <ProductPrice>{productPrice}</ProductPrice>
+        </ProductTitleWrapper>
       </div>
     </ProductListLink>
   );
