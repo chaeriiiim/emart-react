@@ -6,6 +6,7 @@ import SectionTitle from "./SectionTitle";
 
 import dawnDeliveryMark from "../../assets/dawnDeliveryMark.avif";
 import Product_1 from "../../assets/product_1.avif";
+import Product_2 from "../../assets/product_2.avif";
 
 import styled from "styled-components";
 
@@ -13,20 +14,18 @@ const mockProducts = [
   {
     href: "#",
     imgSrc: Product_1,
-    imgAlt: "CJ 제품",
-
-    componyName: "CJ제일제당",
-    productName: "브랜드 FESTA! 조미료/소스 ~ 1+1",
-    productPrice: "13,200원~",
+    imgAlt: "조우 한우",
+    componyName: "조우",
+    productName: "[1++NO.9]생갈비 등 한우 특수부위 모듬",
+    productPrice: "99,980원~",
   },
   {
     href: "#",
-    imgSrc: Product_1,
-    imgAlt: "오뚜기 제품",
-    markSrc: dawnDeliveryMark,
-    componyName: "오뚜기",
-    productName: "진라면 5+1",
-    productPrice: "5,980원",
+    imgSrc: Product_2,
+    imgAlt: "백설 조미료",
+    componyName: "CJ제일제당",
+    productName: "브랜드 FESTA! 조미료/소스 ~1+1",
+    productPrice: "13,200원~",
   },
   {
     href: "#",
