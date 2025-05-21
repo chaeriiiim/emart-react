@@ -46,6 +46,42 @@ const mockProducts = [
     productName: "진라면 5+1",
     productPrice: "5,980원",
   },
+  {
+    href: "#",
+    imgSrc: Product_1,
+    imgAlt: "오뚜기 제품",
+    markSrc: dawnDeliveryMark,
+    componyName: "오뚜기",
+    productName: "진라면 5+1",
+    productPrice: "5,980원",
+  },
+  {
+    href: "#",
+    imgSrc: Product_1,
+    imgAlt: "오뚜기 제품",
+    markSrc: dawnDeliveryMark,
+    componyName: "오뚜기",
+    productName: "진라면 5+1",
+    productPrice: "5,980원",
+  },
+  {
+    href: "#",
+    imgSrc: Product_1,
+    imgAlt: "오뚜기 제품",
+    markSrc: dawnDeliveryMark,
+    componyName: "오뚜기",
+    productName: "진라면 5+1",
+    productPrice: "5,980원",
+  },
+  {
+    href: "#",
+    imgSrc: Product_1,
+    imgAlt: "오뚜기 제품",
+    markSrc: dawnDeliveryMark,
+    componyName: "오뚜기",
+    productName: "진라면 5+1",
+    productPrice: "5,980원",
+  },
 ];
 
 const MallSectionWrapper = styled.div`
