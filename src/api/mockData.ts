@@ -1,5 +1,3 @@
-// src/api/mockData.ts
-
 import ObanjangBadge from "../assets/badge_obanjang.avif";
 import dawnDeliveryMark from "../assets/dawnDeliveryMark.avif";
 import Product_1 from "../assets/product_1.avif";
