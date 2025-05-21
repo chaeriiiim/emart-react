@@ -7,6 +7,12 @@ import SectionTitle from "./SectionTitle";
 import dawnDeliveryMark from "../../assets/dawnDeliveryMark.avif";
 import Product_1 from "../../assets/product_1.avif";
 import Product_2 from "../../assets/product_2.avif";
+import Product_3 from "../../assets/product_3.avif";
+import Product_4 from "../../assets/product_4.avif";
+import Product_5 from "../../assets/product_5.avif";
+import Product_6 from "../../assets/product_6.avif";
+import Product_7 from "../../assets/product_7.avif";
+import Product_8 from "../../assets/product_8.avif";
 
 import styled from "styled-components";
 
@@ -29,57 +35,50 @@ const mockProducts = [
   },
   {
     href: "#",
-    imgSrc: Product_1,
-    imgAlt: "오뚜기 제품",
+    imgSrc: Product_3,
+    imgAlt: "맬크앤허니 제품",
     markSrc: dawnDeliveryMark,
-    componyName: "오뚜기",
-    productName: "진라면 5+1",
-    productPrice: "5,980원",
+    componyName: "밀크앤허니",
+    productName: "(~1+1)호텔컬렉션/르쎄떼 전 품목 할인행사",
+    productPrice: "1,290원~",
   },
   {
     href: "#",
-    imgSrc: Product_1,
-    imgAlt: "오뚜기 제품",
-    markSrc: dawnDeliveryMark,
-    componyName: "오뚜기",
-    productName: "진라면 5+1",
-    productPrice: "5,980원",
+    imgSrc: Product_4,
+    imgAlt: "국물내기 제품",
+    productName: "국물내기 참치액/간장/육수팩 ~50%",
+    productPrice: "9,900원~",
   },
   {
     href: "#",
-    imgSrc: Product_1,
-    imgAlt: "오뚜기 제품",
-    markSrc: dawnDeliveryMark,
-    componyName: "오뚜기",
-    productName: "진라면 5+1",
-    productPrice: "5,980원",
+    imgSrc: Product_5,
+    imgAlt: "쌀 제품",
+    componyName: "이쌀이다",
+    productName: "전국팔도 쌀 잡곡 할인특가!",
+    productPrice: "30,570원~",
   },
   {
     href: "#",
-    imgSrc: Product_1,
-    imgAlt: "오뚜기 제품",
-    markSrc: dawnDeliveryMark,
-    componyName: "오뚜기",
-    productName: "진라면 5+1",
-    productPrice: "5,980원",
+    imgSrc: Product_6,
+    imgAlt: "영양제 제품",
+    productName: "인기 영양제/홍삼/건강식품 ~6-% 쓱 새벽배송",
+    productPrice: "19,800원~",
   },
   {
     href: "#",
-    imgSrc: Product_1,
-    imgAlt: "오뚜기 제품",
-    markSrc: dawnDeliveryMark,
-    componyName: "오뚜기",
-    productName: "진라면 5+1",
-    productPrice: "5,980원",
+    imgSrc: Product_7,
+    imgAlt: "뉴오리진 제품",
+    componyName: "뉴오리진",
+    productName: "이너플로라 질유산균 외 데일리 건강특가 골라",
+    productPrice: "9,900원~",
   },
   {
     href: "#",
-    imgSrc: Product_1,
-    imgAlt: "오뚜기 제품",
+    imgSrc: Product_8,
+    imgAlt: "과일",
     markSrc: dawnDeliveryMark,
-    componyName: "오뚜기",
-    productName: "진라면 5+1",
-    productPrice: "5,980원",
+    productName: "제철 프리미엄 과일 ~50% 할인",
+    productPrice: "9,950원~",
   },
 ];
 

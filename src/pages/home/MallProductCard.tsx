@@ -35,7 +35,7 @@ export interface ProductCardProps {
   imgAlt: string;
   markSrc?: string;
   markAlt?: string;
-  componyName: string;
+  componyName?: string;
   productName: string;
   productPrice: string;
 }
