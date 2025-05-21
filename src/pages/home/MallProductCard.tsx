@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const ProductListLink = styled.a`
   width: 302px;
+  padding: 32px 0px 40px;
   & div {
     line-height: 24px;
   }
