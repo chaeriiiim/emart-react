@@ -50,7 +50,6 @@ const mockProducts = [
 
 const MallSectionWrapper = styled.div`
   width: 100%;
-
   margin-top: 120px;
 `;
 
