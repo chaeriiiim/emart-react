@@ -30,7 +30,7 @@ export const mockProducts = [
     productName: "[1++NO.9]생갈비 등 한우 특수부위 모듬",
     productPrice: "99,980원~",
     badgeImg: ObanjangBadge,
-    deliveryTextMark: ["새벽배송 가능"],
+    deliveryTextMark: ["새벽배송 가능", "스타배송 가능"],
   },
   {
     href: "#",
