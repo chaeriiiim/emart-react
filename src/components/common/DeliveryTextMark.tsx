@@ -16,7 +16,7 @@ const DeliveryTextMarkWrapper = styled.div`
 `;
 
 interface DeliveryTextMarkProps {
-  title: string;
+  title?: string;
 }
 
 export default function DeliveryTextMark({ title }: DeliveryTextMarkProps) {
