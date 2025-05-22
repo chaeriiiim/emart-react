@@ -1,5 +1,6 @@
 import ObanjangBadge from "../assets/badge_obanjang.avif";
 import dawnDeliveryMark from "../assets/dawnDeliveryMark.avif";
+import OneplusoneMark from "../assets/onePlusOneBagde.svg";
 import weeklyDeliveryMark from "../assets/weeklyDeliveryMark.avif";
 
 import Product_1 from "../assets/product_1.avif";
@@ -103,7 +104,7 @@ export const mockProducts_2 = [
     componyName: "조우",
     productName: "[1++NO.9]생갈비 등 한우 특수부위 모듬",
     productPrice: "99,980원~",
-    badgeImg: ObanjangBadge,
+    badgeImg: OneplusoneMark,
   },
   {
     href: "#",

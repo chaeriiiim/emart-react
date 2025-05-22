@@ -2,6 +2,20 @@ import DeliveryMark from "../../components/common/DeliveryMark";
 
 import styled from "styled-components";
 
+export interface ProductCardProps {
+  href: string;
+  imgSrc: string;
+  imgAlt: string;
+  markSrc?: string;
+  markAlt?: string;
+  componyName?: string;
+  productName: string;
+  productPrice: string;
+  badgeImg?: string;
+  badgeWidth?: number | string;
+  badgeHeight?: number | string;
+}
+
 const ProductListLink = styled.a`
   width: 302px;
   padding: 32px 0px 40px;
@@ -10,7 +24,11 @@ const ProductListLink = styled.a`
   }
 `;
 
-const ProductImgWrapper = styled.div<{ badge?: string }>`
+const ProductImgWrapper = styled.div<{
+  badge?: string;
+  badgeWidth?: number;
+  badgeHeight?: number;
+}>`
   position: relative;
   width: 302px;
   height: 302px;
@@ -20,8 +38,8 @@ const ProductImgWrapper = styled.div<{ badge?: string }>`
     position: absolute;
     top: 238px;
     right: 238px;
-    width: 60px;
-    height: 60px;
+    width: ${(props) => props.badgeWidth || 60}px;
+    height: ${(props) => props.badgeHeight || 60}px;
     background-image: url(${(props) => props.badge});
     background-size: cover;
     background-repeat: no-repeat;
@@ -49,18 +67,6 @@ const ProductPrice = styled.p`
 const ProductTitleWrapper = styled.div`
   padding: 8px 0px;
 `;
-
-export interface ProductCardProps {
-  href: string;
-  imgSrc: string;
-  imgAlt: string;
-  markSrc?: string;
-  markAlt?: string;
-  componyName?: string;
-  productName: string;
-  productPrice: string;
-  badgeImg?: string;
-}
 
 export default function MallProductCard({
   href,
