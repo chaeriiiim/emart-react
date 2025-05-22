@@ -1,7 +1,6 @@
 import ObanjangBadge from "../assets/badge_obanjang.avif";
 import dawnDeliveryMark from "../assets/dawnDeliveryMark.avif";
-import weeklyDeliveryMark from "../assets/weeklyDeliveryMark.avif";
-
+import OnePlusBadge from "../assets/onePlusOneBadge.svg";
 import Product_1 from "../assets/product_1.avif";
 import Product_2 from "../assets/product_2.avif";
 import Product_3 from "../assets/product_3.avif";
@@ -10,6 +9,7 @@ import Product_5 from "../assets/product_5.avif";
 import Product_6 from "../assets/product_6.avif";
 import Product_7 from "../assets/product_7.avif";
 import Product_8 from "../assets/product_8.avif";
+import weeklyDeliveryMark from "../assets/weeklyDeliveryMark.avif";
 
 import Product_10 from "../assets/product_10.avif";
 import Product_11 from "../assets/product_11.avif";
@@ -104,9 +104,9 @@ export const mockProducts_2 = [
     componyName: "크리넥스",
     productName: "3겹 순수 소프트 내추럴 30m*30롤",
     productPrice: "31,800원~",
-    badgeImg: weeklyDeliveryMark,
-    badgeWidth: 30,
-    badgeHeight: 20,
+    badgeImg: OnePlusBadge,
+    // badgeWidth: 30,
+    // badgeHeight: 20,
   },
   {
     href: "#",
