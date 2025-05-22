@@ -45,8 +45,6 @@ const ProductImgWrapper = styled.div<{
     background-image: url(${(props) => props.$badge});
     background-size: cover;
     background-repeat: no-repeat;
-    border: 1px solid red;
-    background-color: black;
   }
 `;
 const ProductImg = styled.img`
