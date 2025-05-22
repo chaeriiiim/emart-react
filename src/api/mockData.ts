@@ -1,6 +1,6 @@
 import ObanjangBadge from "../assets/badge_obanjang.avif";
 import dawnDeliveryMark from "../assets/dawnDeliveryMark.avif";
-import OnePlusBadge from "../assets/onePlusOneBadge.svg";
+
 import Product_1 from "../assets/product_1.avif";
 import Product_2 from "../assets/product_2.avif";
 import Product_3 from "../assets/product_3.avif";
@@ -29,7 +29,6 @@ export const mockProducts = [
     productName: "[1++NO.9]생갈비 등 한우 특수부위 모듬",
     productPrice: "99,980원~",
     badgeImg: ObanjangBadge,
-    deliveryTextMark: ["새벽배송 가능", "스타배송 가능"],
   },
   {
     href: "#",
@@ -104,9 +103,7 @@ export const mockProducts_2 = [
     componyName: "크리넥스",
     productName: "3겹 순수 소프트 내추럴 30m*30롤",
     productPrice: "31,800원~",
-    badgeImg: OnePlusBadge,
-    // badgeWidth: 30,
-    // badgeHeight: 20,
+    deliveryTextMark: ["새벽배송 가능", "스타배송 가능"],
   },
   {
     href: "#",
@@ -116,6 +113,7 @@ export const mockProducts_2 = [
     componyName: "CJ제일제당",
     productName: "고메함박스테이크152g",
     productPrice: "3,980원~",
+    deliveryTextMark: ["새벽배송 가능"],
   },
   {
     href: "#",
@@ -125,6 +123,7 @@ export const mockProducts_2 = [
     componyName: "CJ제일제당",
     productName: "경양식돈까스 340g",
     productPrice: "10,980원~",
+    deliveryTextMark: ["새벽배송 가능", "스타배송 가능"],
   },
   {
     href: "#",
