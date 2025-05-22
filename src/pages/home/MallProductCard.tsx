@@ -70,6 +70,12 @@ const ProductTitleWrapper = styled.div`
   padding: 8px 0px;
 `;
 
+const MarkRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+`;
+
 export default function MallProductCard({
   href,
   imgSrc,
@@ -96,11 +102,11 @@ export default function MallProductCard({
           <ProductName>{productName}</ProductName>
           <ProductPrice>{productPrice}</ProductPrice>
           {deliveryTextMark && (
-            <div>
+            <MarkRow>
               {deliveryTextMark.map((text, idx) => (
                 <DeliveryTextMark key={idx} title={text} />
               ))}
-            </div>
+            </MarkRow>
           )}
         </ProductTitleWrapper>
       </div>
