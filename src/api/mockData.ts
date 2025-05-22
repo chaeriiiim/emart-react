@@ -1,5 +1,7 @@
 import ObanjangBadge from "../assets/badge_obanjang.avif";
 import dawnDeliveryMark from "../assets/dawnDeliveryMark.avif";
+import weeklyDeliveryMark from "../assets/weeklyDeliveryMark.avif";
+
 import Product_1 from "../assets/product_1.avif";
 import Product_2 from "../assets/product_2.avif";
 import Product_3 from "../assets/product_3.avif";
@@ -9,14 +11,14 @@ import Product_6 from "../assets/product_6.avif";
 import Product_7 from "../assets/product_7.avif";
 import Product_8 from "../assets/product_8.avif";
 
-import Product_9 from "../assets/1+1_product_1.avif";
-import Product_10 from "../assets/1+1_product_2.avif";
-import Product_11 from "../assets/1+1_product_3.avif";
-import Product_12 from "../assets/1+1_product_4.avif";
-import Product_13 from "../assets/1+1_product_5.avif";
-import Product_14 from "../assets/1+1_product_6.avif";
-import Product_15 from "../assets/1+1_product_7.avif";
-import Product_16 from "../assets/1+1_product_8.avif";
+import Product_10 from "../assets/product_10.avif";
+import Product_11 from "../assets/product_11.avif";
+import Product_12 from "../assets/product_12.avif";
+import Product_13 from "../assets/product_13.avif";
+import Product_14 from "../assets/product_14.jpg";
+import Product_15 from "../assets/product_15.avif";
+import Product_16 from "../assets/product_16.avif";
+import Product_9 from "../assets/product_9.avif";
 
 export const mockProducts = [
   {
@@ -97,6 +99,7 @@ export const mockProducts_2 = [
     href: "#",
     imgSrc: Product_9,
     imgAlt: "조우 한우",
+    markSrc: weeklyDeliveryMark,
     componyName: "조우",
     productName: "[1++NO.9]생갈비 등 한우 특수부위 모듬",
     productPrice: "99,980원~",
@@ -115,7 +118,7 @@ export const mockProducts_2 = [
     href: "#",
     imgSrc: Product_11,
     imgAlt: "맬크앤허니 제품",
-    markSrc: dawnDeliveryMark,
+    markSrc: weeklyDeliveryMark,
     componyName: "밀크앤허니",
     productName: "(~1+1)호텔컬렉션/르쎄떼 전 품목 할인행사",
     productPrice: "1,290원~",
