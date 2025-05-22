@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import styled from "styled-components";
 
 interface TabsItem {
@@ -9,6 +7,8 @@ interface TabsItem {
 
 interface TabsProps {
   tabs: TabsItem[];
+  activeTab: string;
+  onChangeTab: (id: string) => void;
 }
 
 const TapWrapper = styled.div`
@@ -33,15 +33,13 @@ const TapInnerWrapper = styled.div<{ active: boolean }>`
   }
 `;
 
-export default function Tap({ tabs }: TabsProps) {
-  const [activeTab, setActiveTab] = useState<string>(tabs[0].id);
-
+export default function Tap({ tabs, activeTab, onChangeTab }: TabsProps) {
   return (
     <TapWrapper>
       {tabs.map((tab) => (
         <TapInnerWrapper
           key={tab.id}
-          onClick={() => setActiveTab(tab.id)}
+          onClick={() => onChangeTab(tab.id)}
           active={activeTab === tab.id}
         >
           <p>{tab.label}</p>
