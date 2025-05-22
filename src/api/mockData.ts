@@ -106,6 +106,8 @@ export const mockProducts_2 = [
     productName: "3겹 순수 소프트 내추럴 30m*30롤",
     productPrice: "31,800원~",
     badgeImg: OneplusoneMark,
+    badgeWidth: 30,
+    badgeHeight: 20,
   },
   {
     href: "#",
