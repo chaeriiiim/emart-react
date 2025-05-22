@@ -1,6 +1,5 @@
 import ObanjangBadge from "../assets/badge_obanjang.avif";
 import dawnDeliveryMark from "../assets/dawnDeliveryMark.avif";
-import OneplusoneMark from "../assets/onePlusOneBagde.svg";
 import weeklyDeliveryMark from "../assets/weeklyDeliveryMark.avif";
 
 import Product_1 from "../assets/product_1.avif";
@@ -117,7 +116,6 @@ export const mockProducts_2 = [
     componyName: "CJ제일제당",
     productName: "고메함박스테이크152g",
     productPrice: "3,980원~",
-    badgeImg: OneplusoneMark,
   },
   {
     href: "#",
@@ -127,7 +125,6 @@ export const mockProducts_2 = [
     componyName: "CJ제일제당",
     productName: "경양식돈까스 340g",
     productPrice: "10,980원~",
-    badgeImg: OneplusoneMark,
   },
   {
     href: "#",
@@ -136,7 +133,6 @@ export const mockProducts_2 = [
     markSrc: weeklyDeliveryMark,
     productName: "차오차이 130직화간짜장 180g",
     productPrice: "3,980원~",
-    badgeImg: OneplusoneMark,
   },
   {
     href: "#",
@@ -146,7 +142,6 @@ export const mockProducts_2 = [
     componyName: "풀무원",
     productName: "쌀 물만두 1kg",
     productPrice: "10,980원~",
-    badgeImg: OneplusoneMark,
   },
   {
     href: "#",
@@ -156,7 +151,6 @@ export const mockProducts_2 = [
     componyName: "CJ제일제당",
     productName: "고메 크리스피 너겟 450g",
     productPrice: "9,980원~",
-    badgeImg: OneplusoneMark,
   },
   {
     href: "#",
@@ -165,7 +159,6 @@ export const mockProducts_2 = [
     markSrc: dawnDeliveryMark,
     productName: "[냉장][다향] 훈제오리 슬라이스 450g(150g*3팩)",
     productPrice: "15,800원~",
-    badgeImg: OneplusoneMark,
   },
   {
     href: "#",
@@ -174,6 +167,5 @@ export const mockProducts_2 = [
     markSrc: weeklyDeliveryMark,
     productName: "[서울우유]유기농 우유 700ml",
     productPrice: "4,980원~",
-    badgeImg: OneplusoneMark,
   },
 ];
