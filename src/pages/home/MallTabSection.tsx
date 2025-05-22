@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 import { mockProducts, mockProducts_2 } from "../../api/mockData";
-import Tap from "../../components/common/Tap";
+import Tab from "../../components/common/Tab";
 import MallProductList from "./MallProductList";
 
 import type { ProductCardProps } from "./MallProductCard";
@@ -48,7 +48,7 @@ export default function MallTabSection() {
 
   return (
     <MallTabWrapper>
-      <Tap tabs={tabsData} activeTab={activeTab} onChangeTab={setActiveTab} />
+      <Tab tabs={tabsData} activeTab={activeTab} onChangeTab={setActiveTab} />
       {loading ? <p>로딩중</p> : <MallProductList products={products} />}
     </MallTabWrapper>
   );
