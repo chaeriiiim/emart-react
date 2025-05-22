@@ -1,4 +1,5 @@
 import DeliveryMark from "../../components/common/DeliveryMark";
+import DeliveryTextMark from "../../components/common/DeliveryTextMark";
 
 import styled from "styled-components";
 
@@ -14,6 +15,7 @@ export interface ProductCardProps {
   badgeImg?: string;
   badgeWidth?: number | string;
   badgeHeight?: number | string;
+  deliveryTextMark?: string[];
 }
 
 const ProductListLink = styled.a`
@@ -78,6 +80,7 @@ export default function MallProductCard({
   productName,
   productPrice,
   badgeImg,
+  deliveryTextMark,
 }: ProductCardProps) {
   return (
     <ProductListLink href={href}>
@@ -92,6 +95,13 @@ export default function MallProductCard({
           <ProductComponyName>{componyName}</ProductComponyName>
           <ProductName>{productName}</ProductName>
           <ProductPrice>{productPrice}</ProductPrice>
+          {deliveryTextMark && (
+            <div>
+              {deliveryTextMark.map((text, idx) => (
+                <DeliveryTextMark key={idx} title={text} />
+              ))}
+            </div>
+          )}
         </ProductTitleWrapper>
       </div>
     </ProductListLink>

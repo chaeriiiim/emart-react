@@ -1,3 +1,4 @@
+import DeliveryTextMark from "../../components/common/DeliveryTextMark";
 import MoreViewButton from "../../components/common/MoreViewButton";
 import MallTabSection from "./MallTabSection";
 import SectionTitle from "./SectionTitle";
@@ -16,6 +17,7 @@ export default function MallSection() {
       <MallTabSection />
 
       <MoreViewButton path="/a" title="오반장 전체보기" />
+      <DeliveryTextMark />
     </MallSectionWrapper>
   );
 }
