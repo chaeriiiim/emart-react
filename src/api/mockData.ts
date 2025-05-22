@@ -105,7 +105,7 @@ export const mockProducts_2 = [
     componyName: "크리넥스",
     productName: "3겹 순수 소프트 내추럴 30m*30롤",
     productPrice: "31,800원~",
-    badgeImg: OneplusoneMark,
+    badgeImg: weeklyDeliveryMark,
     badgeWidth: 30,
     badgeHeight: 20,
   },
