@@ -9,11 +9,11 @@ interface BannerProps {
   descColor?: string;
 }
 
-const BannerWrapper = styled.div<{ backgroundImg: string }>`
+const BannerWrapper = styled.div<{ $backgroundImg: string }>`
   width: 100%;
   height: 120px;
   margin-top: 120px;
-  background-image: url(${(props) => props.backgroundImg});
+  background-image: url(${(props) => props.$backgroundImg});
   background-size: cover;
   background-position: center;
   position: relative;
@@ -46,7 +46,7 @@ export default function Banner({
   descColor,
 }: BannerProps) {
   return (
-    <BannerWrapper backgroundImg={backgroundImg}>
+    <BannerWrapper $backgroundImg={backgroundImg}>
       <a href={href}>
         <BannerTextWrapper>
           <Title color={titleColor}>{title}</Title>
