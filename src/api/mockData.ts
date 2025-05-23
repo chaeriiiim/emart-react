@@ -212,6 +212,8 @@ export const mockProducts_3 = [
 
 export const mockProducts_4 = [
   {
+    width: 410,
+    height: 246,
     href: "#",
     imgSrc: Product_9,
     imgAlt: "크리넥스 제품",
@@ -222,6 +224,8 @@ export const mockProducts_4 = [
     deliveryTextMark: ["새벽배송 가능", "스타배송 가능"],
   },
   {
+    width: 410,
+    height: 246,
     href: "#",
     imgSrc: Product_10,
     imgAlt: "CJ 함박 스테이크",
@@ -232,6 +236,8 @@ export const mockProducts_4 = [
     deliveryTextMark: ["새벽배송 가능"],
   },
   {
+    width: 410,
+    height: 246,
     href: "#",
     imgSrc: Product_11,
     imgAlt: "CJ 돈까스",
@@ -240,13 +246,5 @@ export const mockProducts_4 = [
     productName: "경양식돈까스 340g",
     productPrice: "10,980원~",
     deliveryTextMark: ["새벽배송 가능", "스타배송 가능"],
-  },
-  {
-    href: "#",
-    imgSrc: Product_12,
-    imgAlt: "짜장 제품",
-    markSrc: weeklyDeliveryMark,
-    productName: "차오차이 130직화간짜장 180g",
-    productPrice: "3,980원~",
   },
 ];

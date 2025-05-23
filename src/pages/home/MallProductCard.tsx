@@ -20,8 +20,8 @@ export interface ProductCardProps {
   deliveryTextMark?: string[];
 }
 
-const ProductListLink = styled.a`
-  width: 302px;
+const ProductListLink = styled.a<{ width?: number }>`
+  width: ${(props) => props.width || 302}px;
   padding: 32px 0px 40px;
   & div {
     line-height: 24px;
@@ -29,13 +29,15 @@ const ProductListLink = styled.a`
 `;
 
 const ProductImgWrapper = styled.div<{
+  width?: number;
+  height?: number;
   $badge?: string;
   $badgeWidth?: number;
   $badgeHeight?: number;
 }>`
   position: relative;
-  width: 302px;
-  height: 302px;
+  width: ${(props) => props.width || 302}px;
+  height: ${(props) => props.height || 302}px;
 
   &::after {
     content: "";
@@ -49,8 +51,8 @@ const ProductImgWrapper = styled.div<{
     background-repeat: no-repeat;
   }
 `;
-const ProductImg = styled.img<{ $width?: number; $height?: number }>`
-  width: ${(props) => props.$width || 302}px;
+const ProductImg = styled.img<{ width?: number; height?: number }>`
+  width: ${(props) => props.width || 302}px;
   height: ${(props) => props.height || 302}px;
   object-fit: cover;
 `;
@@ -96,12 +98,14 @@ export default function MallProductCard({
   height,
 }: ProductCardProps) {
   return (
-    <ProductListLink href={href}>
+    <ProductListLink href={href} width={width}>
       <div>
         <ProductImgWrapper
           $badge={badgeImg}
           $badgeWidth={badgeWidth}
           $badgeHeight={badgeHeight}
+          width={width}
+          height={height}
         >
           <ProductImg src={imgSrc} alt={imgAlt} width={width} height={height} />
         </ProductImgWrapper>
