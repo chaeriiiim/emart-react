@@ -1,4 +1,7 @@
+import { mockProducts_3 } from "../../api/mockData";
 import DeliveryTextMark from "../../components/common/DeliveryTextMark";
+import MoreViewButton from "../../components/common/MoreViewButton";
+import MallProductList from "./MallProductList";
 import MallTabSection from "./MallTabSection";
 import SectionTitle from "./SectionTitle";
 
@@ -12,9 +15,23 @@ const MallSectionWrapper = styled.div`
 export default function MallSection() {
   return (
     <MallSectionWrapper>
-      <SectionTitle title="지금 세일 중인 상품이에요" />
-      <MallTabSection />
-      <DeliveryTextMark />
+      <div>
+        <SectionTitle title="지금 세일 중인 상품이에요" />
+        <MallTabSection />
+        <DeliveryTextMark />
+      </div>
+
+      <div>
+        <SectionTitle title="계속 사게되는 재구매 베스트 상품" />
+        <MallProductList products={mockProducts_3} />
+        <MoreViewButton title="재구매 베스트 전체보기" path="#" />
+      </div>
+
+      <div style={{ backgroundColor: "#f0f0f0", height: "624px" }}>
+        <SectionTitle title="계속 사게되는 재구매 베스트 상품" />
+        <MallProductList products={mockProducts_3} />
+        <MoreViewButton title="재구매 베스트 전체보기" path="#" />
+      </div>
     </MallSectionWrapper>
   );
 }
