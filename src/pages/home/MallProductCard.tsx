@@ -92,6 +92,8 @@ export default function MallProductCard({
   deliveryTextMark,
   badgeWidth,
   badgeHeight,
+  width,
+  height,
 }: ProductCardProps) {
   return (
     <ProductListLink href={href}>
@@ -101,7 +103,7 @@ export default function MallProductCard({
           $badgeWidth={badgeWidth}
           $badgeHeight={badgeHeight}
         >
-          <ProductImg src={imgSrc} alt={imgAlt} />
+          <ProductImg src={imgSrc} alt={imgAlt} width={width} height={height} />
         </ProductImgWrapper>
         <ProductTitleWrapper>
           {markSrc && (

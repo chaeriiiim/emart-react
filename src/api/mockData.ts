@@ -22,6 +22,8 @@ import Product_9 from "../assets/product_9.avif";
 
 export const mockProducts = [
   {
+    width: 250, // 👈 이렇게 넣어두면!
+    height: 250,
     href: "#",
     imgSrc: Product_1,
     imgAlt: "조우 한우",
