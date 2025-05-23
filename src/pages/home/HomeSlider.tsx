@@ -2,11 +2,12 @@ export default function HomeSlider() {
   return (
     <div
       style={{
-        width: "100%",
+        width: "1280px",
         height: "500px",
         display: "flex",
         gap: "24px",
         marginTop: "30px",
+        margin: "0 auto",
       }}
     >
       <div>
