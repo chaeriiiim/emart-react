@@ -24,6 +24,10 @@ import NewProduct_1 from "../assets/new_product1.avif";
 import NewProduct_2 from "../assets/new_product_2.avif";
 import NewProduct_3 from "../assets/new_product_3.jpg";
 
+import AssayProduct_1 from "../assets/assay_product_1.avif";
+import AssayProduct_2 from "../assets/assay_product_2.avif";
+import AssayProduct_3 from "../assets/assay_product_3.jpeg";
+
 export const mockProducts = [
   {
     href: "#",
@@ -243,6 +247,44 @@ export const mockProducts_4 = [
     height: 246,
     href: "#",
     imgSrc: NewProduct_3,
+    imgAlt: "CJ 돈까스",
+    markSrc: dawnDeliveryMark,
+    componyName: "CJ제일제당",
+    productName: "경양식돈까스 340g",
+    productPrice: "10,980원~",
+    deliveryTextMark: ["새벽배송 가능", "스타배송 가능"],
+  },
+];
+
+export const mockProducts_5 = [
+  {
+    width: 410,
+    height: 246,
+    href: "#",
+    imgSrc: AssayProduct_1,
+    imgAlt: "문경사과 롤케이크",
+    markSrc: dawnDeliveryMark,
+    productName: "누구나 좋아할 만한 부드럽고 달콤한 문경사과 롤케익",
+    productPrice: "6,986원",
+    deliveryTextMark: ["새벽배송 가능", "스타배송 가능"],
+  },
+  {
+    width: 410,
+    height: 246,
+    href: "#",
+    imgSrc: AssayProduct_2,
+    imgAlt: "CJ 함박 스테이크",
+    markSrc: dawnDeliveryMark,
+    componyName: "CJ제일제당",
+    productName: "고메함박스테이크152g",
+    productPrice: "3,980원~",
+    deliveryTextMark: ["새벽배송 가능"],
+  },
+  {
+    width: 410,
+    height: 246,
+    href: "#",
+    imgSrc: AssayProduct_3,
     imgAlt: "CJ 돈까스",
     markSrc: dawnDeliveryMark,
     componyName: "CJ제일제당",
