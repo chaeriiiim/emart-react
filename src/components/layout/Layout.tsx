@@ -14,10 +14,10 @@ const LayoutRoot = styled.div`
   flex-direction: column;
 `;
 
-const Container = styled.div`
-  width: 1280px;
-  margin: 0 auto;
-`;
+// const Container = styled.div`
+//   width: 1280px;
+//   margin: 0 auto;
+// `;
 
 export default function Layout() {
   return (
@@ -25,9 +25,9 @@ export default function Layout() {
       <HeaderNav />
       <Header />
       <HeaderCategory />
-      <Container>
-        <Outlet />
-      </Container>
+      {/* <Container> */}
+      <Outlet />
+      {/* </Container> */}
       <Footer />
     </LayoutRoot>
   );
