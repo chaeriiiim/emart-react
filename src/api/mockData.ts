@@ -22,8 +22,6 @@ import Product_9 from "../assets/product_9.avif";
 
 export const mockProducts = [
   {
-    width: 250, // 👈 이렇게 넣어두면!
-    height: 250,
     href: "#",
     imgSrc: Product_1,
     imgAlt: "조우 한우",
@@ -172,6 +170,47 @@ export const mockProducts_2 = [
 ];
 
 export const mockProducts_3 = [
+  {
+    href: "#",
+    imgSrc: Product_9,
+    imgAlt: "크리넥스 제품",
+    markSrc: weeklyDeliveryMark,
+    componyName: "크리넥스",
+    productName: "3겹 순수 소프트 내추럴 30m*30롤",
+    productPrice: "31,800원~",
+    deliveryTextMark: ["새벽배송 가능", "스타배송 가능"],
+  },
+  {
+    href: "#",
+    imgSrc: Product_10,
+    imgAlt: "CJ 함박 스테이크",
+    markSrc: weeklyDeliveryMark,
+    componyName: "CJ제일제당",
+    productName: "고메함박스테이크152g",
+    productPrice: "3,980원~",
+    deliveryTextMark: ["새벽배송 가능"],
+  },
+  {
+    href: "#",
+    imgSrc: Product_11,
+    imgAlt: "CJ 돈까스",
+    markSrc: dawnDeliveryMark,
+    componyName: "CJ제일제당",
+    productName: "경양식돈까스 340g",
+    productPrice: "10,980원~",
+    deliveryTextMark: ["새벽배송 가능", "스타배송 가능"],
+  },
+  {
+    href: "#",
+    imgSrc: Product_12,
+    imgAlt: "짜장 제품",
+    markSrc: weeklyDeliveryMark,
+    productName: "차오차이 130직화간짜장 180g",
+    productPrice: "3,980원~",
+  },
+];
+
+export const mockProducts_4 = [
   {
     href: "#",
     imgSrc: Product_9,
