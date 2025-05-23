@@ -20,6 +20,10 @@ import Product_15 from "../assets/product_15.avif";
 import Product_16 from "../assets/product_16.avif";
 import Product_9 from "../assets/product_9.avif";
 
+import NewProduct_1 from "../assets/new_product1.avif";
+import NewProduct_2 from "../assets/new_product_2.avif";
+import NewProduct_3 from "../assets/new_product_3.jpg";
+
 export const mockProducts = [
   {
     href: "#",
@@ -215,21 +219,20 @@ export const mockProducts_4 = [
     width: 410,
     height: 246,
     href: "#",
-    imgSrc: Product_9,
-    imgAlt: "크리넥스 제품",
-    markSrc: weeklyDeliveryMark,
-    componyName: "크리넥스",
-    productName: "3겹 순수 소프트 내추럴 30m*30롤",
-    productPrice: "31,800원~",
+    imgSrc: NewProduct_1,
+    imgAlt: "문경사과 롤케이크",
+    markSrc: dawnDeliveryMark,
+    productName: "누구나 좋아할 만한 부드럽고 달콤한 문경사과 롤케익",
+    productPrice: "6,986원",
     deliveryTextMark: ["새벽배송 가능", "스타배송 가능"],
   },
   {
     width: 410,
     height: 246,
     href: "#",
-    imgSrc: Product_10,
+    imgSrc: NewProduct_2,
     imgAlt: "CJ 함박 스테이크",
-    markSrc: weeklyDeliveryMark,
+    markSrc: dawnDeliveryMark,
     componyName: "CJ제일제당",
     productName: "고메함박스테이크152g",
     productPrice: "3,980원~",
@@ -239,7 +242,7 @@ export const mockProducts_4 = [
     width: 410,
     height: 246,
     href: "#",
-    imgSrc: Product_11,
+    imgSrc: NewProduct_3,
     imgAlt: "CJ 돈까스",
     markSrc: dawnDeliveryMark,
     componyName: "CJ제일제당",
