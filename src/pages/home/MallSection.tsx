@@ -1,4 +1,4 @@
-import { mockProducts_3 } from "../../api/mockData";
+import { mockProducts_3, mockProducts_4 } from "../../api/mockData";
 import DeliveryTextMark from "../../components/common/DeliveryTextMark";
 import MoreViewButton from "../../components/common/MoreViewButton";
 import MallProductList from "./MallProductList";
@@ -37,7 +37,7 @@ export default function MallSection() {
       >
         <div style={{ width: "1280px", margin: "0 auto" }}>
           <SectionTitle title="계속 사게되는 재구매 베스트 상품" />
-          <MallProductList products={mockProducts_3} />
+          <MallProductList products={mockProducts_4} />
           <MoreViewButton title="재구매 베스트 전체보기" path="#" />
         </div>
       </div>
