@@ -30,13 +30,18 @@ export default function MallSection() {
       <div
         style={{
           backgroundColor: "#f0f0f0",
-          height: "624px",
-          margin: "46px 0px 0px 0px",
-          padding: "46px 0px 0px 0px",
+          // height: "100vh",
+          margin: "46px 0px",
+          padding: "46px 0px",
         }}
       >
         <div style={{ width: "1280px", margin: "0 auto" }}>
           <SectionTitle title="계속 사게되는 재구매 베스트 상품" />
+          <MallProductList products={mockProducts_4} />
+          <MoreViewButton title="재구매 베스트 전체보기" path="#" />
+        </div>
+        <div style={{ width: "1280px", margin: "0 auto" }}>
+          <SectionTitle title="Food Essay" />
           <MallProductList products={mockProducts_4} />
           <MoreViewButton title="재구매 베스트 전체보기" path="#" />
         </div>
