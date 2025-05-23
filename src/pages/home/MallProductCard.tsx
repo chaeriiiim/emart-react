@@ -4,6 +4,8 @@ import DeliveryTextMark from "../../components/common/DeliveryTextMark";
 import styled from "styled-components";
 
 export interface ProductCardProps {
+  width?: number;
+  height?: number;
   href: string;
   imgSrc: string;
   imgAlt: string;
@@ -47,9 +49,10 @@ const ProductImgWrapper = styled.div<{
     background-repeat: no-repeat;
   }
 `;
-const ProductImg = styled.img`
-  width: 302px;
-  height: 302px;
+const ProductImg = styled.img<{ $width?: number; $height?: number }>`
+  width: ${(props) => props.$width || 302}px;
+  height: ${(props) => props.height || 302}px;
+  object-fit: cover;
 `;
 
 const ProductComponyName = styled.span`
