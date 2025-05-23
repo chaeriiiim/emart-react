@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 const DeliveryWrapper = styled.div`
-  margin-top: 40px;
-  width: 100%;
+  padding-top: 40px;
+  width: 1280px;
   height: 100%;
+  margin: 0 auto;
 `;
 
 const Title = styled.p`
