@@ -18,7 +18,7 @@ const EventCardContent = styled.div`
   & img {
     width: 400px;
     height: 240px;
-    border-radius: 12p;
+    border-radius: 12px;
   }
 `;
 
