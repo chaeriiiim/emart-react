@@ -2,10 +2,11 @@ import {
   mockProducts_3,
   mockProducts_4,
   mockProducts_5,
+  mockProducts_6,
 } from "../../api/mockData";
 import DeliveryTextMark from "../../components/common/DeliveryTextMark";
 import MoreViewButton from "../../components/common/MoreViewButton";
-import EventProductCard from "./EventProductCard";
+import EventProductList from "./EventProductList";
 import MallProductList from "./MallProductList";
 import MallTabSection from "./MallTabSection";
 import SectionTitle from "./SectionTitle";
@@ -52,7 +53,7 @@ export default function MallSection() {
         </div>
       </div>
 
-      <EventProductCard />
+      <EventProductList eventProducts={mockProducts_6} />
     </MallSectionWrapper>
   );
 }

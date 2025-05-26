@@ -9,9 +9,9 @@ export interface EventProductCardProps {
 }
 
 const EventProductCardWrapper = styled.div`
-  width: 1280px;
-  // height: 500px;
   margin: 0 auto;
+  border: 1px solid red;
+  gap: 0 24px;
 `;
 
 const EventCardContent = styled.div`

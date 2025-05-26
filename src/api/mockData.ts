@@ -293,3 +293,27 @@ export const mockProducts_5 = [
     deliveryTextMark: ["새벽배송 가능", "스타배송 가능"],
   },
 ];
+
+export const mockProducts_6 = [
+  {
+    href: "#",
+    src: AssayProduct_1,
+    alt: "문경사과",
+    title: "미식관 PICK: 문경사과",
+    subTitle: "풍부한 과즙, 싱그러운 달콤함",
+  },
+  {
+    href: "#",
+    src: AssayProduct_1,
+    alt: "문경사과",
+    title: "미식관 PICK: 문경사과",
+    subTitle: "풍부한 과즙, 싱그러운 달콤함",
+  },
+  {
+    href: "#",
+    src: AssayProduct_1,
+    alt: "문경사과",
+    title: "미식관 PICK: 문경사과",
+    subTitle: "풍부한 과즙, 싱그러운 달콤함",
+  },
+];
