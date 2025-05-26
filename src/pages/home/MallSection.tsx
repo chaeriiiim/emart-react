@@ -5,7 +5,7 @@ import {
 } from "../../api/mockData";
 import DeliveryTextMark from "../../components/common/DeliveryTextMark";
 import MoreViewButton from "../../components/common/MoreViewButton";
-import EventProdcutCard from "./EventProductCard";
+import EventProductCard from "./EventProductCard";
 import MallProductList from "./MallProductList";
 import MallTabSection from "./MallTabSection";
 import SectionTitle from "./SectionTitle";
@@ -52,7 +52,7 @@ export default function MallSection() {
         </div>
       </div>
 
-      <EventProdcutCard />
+      <EventProductCard />
     </MallSectionWrapper>
   );
 }

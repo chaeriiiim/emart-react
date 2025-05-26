@@ -1,6 +1,3 @@
-import test from "../../assets/assay_product_1.avif";
-import MoreViewButton from "../../components/common/MoreViewButton";
-
 import styled from "styled-components";
 
 const EventProductCardWrapper = styled.div`
@@ -31,23 +28,32 @@ const EventSubTitle = styled.div`
   margin-top: 4px;
 `;
 
-export default function EventProdcutCard() {
+interface EventProductCardProps {
+  href: string;
+  src: string;
+  alt: string;
+  title: string;
+  subTitle: string;
+}
+
+export default function EventProductCard({
+  href,
+  src,
+  alt,
+  title,
+  subTitle,
+}: EventProductCardProps) {
   return (
     <EventProductCardWrapper>
       <EventCardContent>
-        <a href="#">
-          {/* href props 시 다른 값 */}
-          <img src={test} alt="사과 이벤트" />
-          {/* src,alt props 시 다른 값 */}
+        <a href={href}>
+          <img src={src} alt={alt} />
           <TItleWrapper>
-            <EventTitle style={{}}>미식관 PICK: 문경사과</EventTitle>
-            {/* title props 시 다른 값 */}
-            <EventSubTitle>풍부한 과즙, 싱그러운 달콤함</EventSubTitle>
-            {/* subtitle props 시 다른 값 */}
+            <EventTitle>{title}</EventTitle>
+            <EventSubTitle>{subTitle}</EventSubTitle>
           </TItleWrapper>
         </a>
       </EventCardContent>
-      <MoreViewButton title="기획전 전체보기" path="#" />
     </EventProductCardWrapper>
   );
 }
