@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-interface EventProductCardProps {
+export interface EventProductCardProps {
   href: string;
   src: string;
   alt: string;
