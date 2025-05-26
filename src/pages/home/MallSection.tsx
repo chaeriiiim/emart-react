@@ -5,6 +5,7 @@ import {
 } from "../../api/mockData";
 import DeliveryTextMark from "../../components/common/DeliveryTextMark";
 import MoreViewButton from "../../components/common/MoreViewButton";
+import EventProdcutCard from "./EventProductCard";
 import MallProductList from "./MallProductList";
 import MallTabSection from "./MallTabSection";
 import SectionTitle from "./SectionTitle";
@@ -50,6 +51,8 @@ export default function MallSection() {
           <MoreViewButton title="재구매 베스트 전체보기" path="#" />
         </div>
       </div>
+
+      <EventProdcutCard />
     </MallSectionWrapper>
   );
 }
