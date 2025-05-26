@@ -1,16 +1,21 @@
 export default function EventProdcutCard() {
   return (
-    <div style={{ width: "100%", backgroundColor: "orange" }}>
+    <div
+      style={{
+        width: "1280px",
+        height: "500px",
+        border: "1px solid red",
+        margin: "0 auto",
+      }}
+    >
       <div
         style={{
-          width: "1280px",
-          height: "500px",
-          border: "1px solid red",
-          margin: "0 auto",
+          width: "400px",
+          height: "240px",
+          backgroundColor: "blue",
+          borderRadius: "12px",
         }}
-      >
-        test
-      </div>
+      ></div>
     </div>
   );
 }
