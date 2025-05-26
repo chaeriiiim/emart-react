@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+interface EventProductCardProps {
+  href: string;
+  src: string;
+  alt: string;
+  title: string;
+  subTitle: string;
+}
+
 const EventProductCardWrapper = styled.div`
   width: 1280px;
   // height: 500px;
@@ -27,14 +35,6 @@ const EventSubTitle = styled.div`
   font-size: 12px;
   margin-top: 4px;
 `;
-
-interface EventProductCardProps {
-  href: string;
-  src: string;
-  alt: string;
-  title: string;
-  subTitle: string;
-}
 
 export default function EventProductCard({
   href,
