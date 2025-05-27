@@ -28,6 +28,10 @@ import AssayProduct_1 from "../assets/assay_product_1.avif";
 import AssayProduct_2 from "../assets/assay_product_2.avif";
 import AssayProduct_3 from "../assets/assay_product_3.avif";
 
+import WeeklyNotion_1 from "../assets/weeklyNotion_1.avif";
+import WeeklyNotion_2 from "../assets/weeklyNotion_2.webp";
+import WeeklyNotion_3 from "../assets/weeklyNotion_3.webp";
+
 export const mockProducts = [
   {
     href: "#",
@@ -315,5 +319,29 @@ export const mockProducts_6 = [
     alt: "카멜커피",
     title: "미식관 PICK: 카멜커피",
     subTitle: "카멜 마스터가 전하는 커피 철학",
+  },
+];
+
+export const mockProducts_7 = [
+  {
+    href: "#",
+    src: WeeklyNotion_1,
+    alt: "가격파격 선언 이미지",
+    title: "2025 가격파격 선언",
+    subTitle: "한 달 내내 초특가",
+  },
+  {
+    href: "#",
+    src: WeeklyNotion_2,
+    alt: "머니 적립 이미지",
+    title: "SSG머니 충전결제 횟수 무제한 머니 적립",
+    subTitle: "첫결제 5%, 기본 1.5%",
+  },
+  {
+    href: "#",
+    src: WeeklyNotion_3,
+    alt: "삼성카드 이미지",
+    title: "똑똑한 혜택 SSG.COM 삼성카드",
+    subTitle: "최대 10% 적립 & 매월 3,900원 추가 혜택",
   },
 ];
