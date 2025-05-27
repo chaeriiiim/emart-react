@@ -10,7 +10,7 @@ interface BannerProps {
 }
 
 const BannerSection = styled.div`
-  margin-top: 120px;
+  margin: 120px 0px;
 `;
 const BannerWrapper = styled.div<{ $backgroundImg: string }>`
   width: 1280px;
