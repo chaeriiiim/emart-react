@@ -1,7 +1,6 @@
 import {
   mockProducts_3,
   mockProducts_4,
-  mockProducts_5,
   mockProducts_6,
 } from "../../api/mockData";
 import DeliveryTextMark from "../../components/common/DeliveryTextMark";
@@ -46,14 +45,13 @@ export default function MallSection() {
           <MallProductList products={mockProducts_4} />
           <MoreViewButton title="재구매 베스트 전체보기" path="#" />
         </div>
+
         <div style={{ width: "1280px", margin: "0 auto" }}>
           <SectionTitle title="Food Essay" />
-          <MallProductList products={mockProducts_5} />
+          <EventProductList eventProducts={mockProducts_6} />
           <MoreViewButton title="재구매 베스트 전체보기" path="#" />
         </div>
       </div>
-
-      <EventProductList eventProducts={mockProducts_6} />
     </MallSectionWrapper>
   );
 }
