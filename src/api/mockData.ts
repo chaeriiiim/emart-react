@@ -26,7 +26,7 @@ import NewProduct_3 from "../assets/new_product_3.jpg";
 
 import AssayProduct_1 from "../assets/assay_product_1.avif";
 import AssayProduct_2 from "../assets/assay_product_2.avif";
-import AssayProduct_3 from "../assets/assay_product_3.jpeg";
+import AssayProduct_3 from "../assets/assay_product_3.avif";
 
 export const mockProducts = [
   {
@@ -297,10 +297,10 @@ export const mockProducts_5 = [
 export const mockProducts_6 = [
   {
     href: "#",
-    src: AssayProduct_1,
-    alt: "문경사과",
-    title: "미식관 PICK: 문경사과",
-    subTitle: "풍부한 과즙, 싱그러운 달콤함",
+    src: AssayProduct_3,
+    alt: "초당 옥수수",
+    title: "달콤한 제철, 초당옥수수",
+    subTitle: "이맘때만 열리는 초당의 시간 with 식탁일기",
   },
   {
     href: "#",
@@ -311,9 +311,9 @@ export const mockProducts_6 = [
   },
   {
     href: "#",
-    src: AssayProduct_1,
-    alt: "문경사과",
-    title: "미식관 PICK: 문경사과",
-    subTitle: "풍부한 과즙, 싱그러운 달콤함",
+    src: AssayProduct_2,
+    alt: "카멜커피",
+    title: "미식관 PICK: 카멜커피",
+    subTitle: "카멜 마스터가 전하는 커피 철학",
   },
 ];

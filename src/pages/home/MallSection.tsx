@@ -17,40 +17,44 @@ const MallSectionWrapper = styled.div`
   margin-top: 120px;
 `;
 
+const MallSectionInnerWrapper = styled.div`
+  width: 1280px;
+  margin: 0 auto;
+`;
+
 export default function MallSection() {
   return (
     <MallSectionWrapper>
-      <div style={{ width: "1280px", margin: "0 auto" }}>
+      <MallSectionInnerWrapper>
         <SectionTitle title="지금 세일 중인 상품이에요" />
         <MallTabSection />
         <DeliveryTextMark />
-      </div>
+      </MallSectionInnerWrapper>
 
-      <div style={{ width: "1280px", margin: "0 auto" }}>
+      <MallSectionInnerWrapper>
         <SectionTitle title="계속 사게되는 재구매 베스트 상품" />
         <MallProductList products={mockProducts_3} />
         <MoreViewButton title="재구매 베스트 전체보기" path="#" />
-      </div>
+      </MallSectionInnerWrapper>
 
       <div
         style={{
           backgroundColor: "#f0f0f0",
-          // height: "100vh",
           margin: "46px 0px",
           padding: "46px 0px",
         }}
       >
-        <div style={{ width: "1280px", margin: "0 auto" }}>
+        <MallSectionInnerWrapper>
           <SectionTitle title="계속 사게되는 재구매 베스트 상품" />
           <MallProductList products={mockProducts_4} />
           <MoreViewButton title="재구매 베스트 전체보기" path="#" />
-        </div>
+        </MallSectionInnerWrapper>
 
-        <div style={{ width: "1280px", margin: "0 auto" }}>
+        <MallSectionInnerWrapper>
           <SectionTitle title="Food Essay" />
           <EventProductList eventProducts={mockProducts_6} />
-          <MoreViewButton title="재구매 베스트 전체보기" path="#" />
-        </div>
+          <MoreViewButton title="Food Essay 전체보기" path="#" />
+        </MallSectionInnerWrapper>
       </div>
     </MallSectionWrapper>
   );
