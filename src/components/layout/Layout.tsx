@@ -1,5 +1,6 @@
 import Footer from "../layout/Footer";
 import Header from "../layout/Header";
+import FooterNav from "./FooterNav";
 import HeaderCategory from "./HeaderCategory";
 import HeaderNav from "./HeaderNav";
 
@@ -28,6 +29,7 @@ export default function Layout() {
       {/* <Container> */}
       <Outlet />
       {/* </Container> */}
+      <FooterNav />
       <Footer />
     </LayoutRoot>
   );
