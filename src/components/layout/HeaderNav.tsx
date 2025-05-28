@@ -1,8 +1,8 @@
-import IconCart from "../../assets/navIcon_cart.svg";
-import IconEarphone from "../../assets/navIcon_earphone.svg";
-import IconHeart from "../../assets/navIcon_heart.svg";
-import IconHuman from "../../assets/navIcon_human.svg";
-import IconSearch from "../../assets/navIcon_search.svg";
+import IconCart from "../../assets/navCart_icon.svg";
+import IconEarphone from "../../assets/navHead_icon.svg";
+import IconHeart from "../../assets/navHeart_icon.svg";
+import IconHuman from "../../assets/navHuman_icon.svg";
+import IconSearch from "../../assets/navSearch_icon.svg";
 import SSGLogo from "../../assets/ssg_logo.svg";
 
 import styled from "styled-components";
