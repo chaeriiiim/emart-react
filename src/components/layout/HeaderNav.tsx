@@ -34,7 +34,7 @@ const nav: NavItem[] = [
 const NavWrapper = styled.div`
   width: 1280px;
   height: 42px;
-  margin: 0 auto;
+  // margin: 0 auto;
   display: flex;
   align-items: center;
   display: flex;
