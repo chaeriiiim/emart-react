@@ -18,6 +18,7 @@ const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 24px;
+  margin: 0 auto;
 `;
 
 const LogoImg = styled.img`
