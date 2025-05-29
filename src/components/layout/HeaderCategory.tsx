@@ -6,7 +6,7 @@ const CategoryWrapper = styled.div`
   background-color: #ffd040;
   display: flex;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
 `;
 
 const CategoryInnerWrapper = styled.div`
@@ -14,6 +14,7 @@ const CategoryInnerWrapper = styled.div`
   height: 100%;
   line-height: 60px;
   display: flex;
+  margin: 0 auto;
 `;
 
 const CategoryButton = styled.div`
