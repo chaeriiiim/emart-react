@@ -18,9 +18,10 @@ const FooterMainNavInner = styled.div`
   align-items: center;
 `;
 
-const FooterMainNavLink = styled.a`
+const FooterMainNavLink = styled.a<{ $highlight?: boolean }>`
   font-size: 13px;
-  color: #777777;
+  // color: #777777;
+  color: ${({ $highlight }) => ($highlight ? "red" : "#777777")};
   font-weight: bold;
   margin: 0 20px 0 0;
 
@@ -32,6 +33,11 @@ const FooterMainNavLink = styled.a`
     height:12px;
     margin-left:20px;
     width:1px;
+  }
+
+  &:nth-child(2),
+  &:nth-child(8){
+    color:red;
   }
 `;
 
@@ -57,7 +63,13 @@ export default function Footer() {
       <FooterMainNavWrapper>
         <FooterMainNavInner>
           {footerMainNav.map((item, index) => (
-            <FooterMainNavLink key={index} href={item.href}>
+            <FooterMainNavLink
+              key={index}
+              href={item.href}
+              $highlight={
+                item.title === "개인정보처리방침" || item.title === "광고신청"
+              }
+            >
               {item.title}
             </FooterMainNavLink>
           ))}
