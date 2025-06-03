@@ -70,6 +70,7 @@ export default function Footer() {
                 item.title === "개인정보처리방침" || item.title === "광고신청"
               }
             >
+              {/* 다시 해봐야함 오류 */}
               {item.title}
             </FooterMainNavLink>
           ))}
