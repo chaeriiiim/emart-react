@@ -1,3 +1,5 @@
+import FooterFamilySiteSelect from "./FooterFamilySiteSelect";
+
 import styled from "styled-components";
 
 const FooterWrapper = styled.div`
@@ -79,6 +81,7 @@ export default function Footer() {
               </FooterMainNavLink>
             ))}
           </NavLinkGroup>
+          <FooterFamilySiteSelect />
         </FooterMainNavInner>
       </FooterMainNavWrapper>
     </FooterWrapper>
