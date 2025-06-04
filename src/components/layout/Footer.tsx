@@ -16,28 +16,35 @@ const FooterMainNavInner = styled.div`
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 `;
 
-const FooterMainNavLink = styled.a`
+const NavLinkGroup = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const FooterMainNavLink = styled.a<{ isLast?: boolean }>`
   font-size: 13px;
   color: #777777;
   font-weight: bold;
   margin: 0 20px 0 0;
 
-  &:not(:last-child)::after {
-    content:"|";
-    display:"inline-block;
-    right:0;
-    color: #e5e5e5;
-    height:12px;
-    margin-left:20px;
-    width:1px;
+  &::after {
+    ${({ isLast }) =>
+      !isLast &&
+      `
+      content: "|";
+      display: inline-block;
+      margin-left: 20px;
+      color: #e5e5e5;
+    `}
   }
 
-  &:nth-child(2) ,
-  &:nth-child(8){
-    color:red;
-  }
+  // &:nth-child(2) ,
+  // &:nth-child(8){
+  //   color:red;
+  // }
 `;
 
 interface FooterMainNavItem {
@@ -61,11 +68,17 @@ export default function Footer() {
     <FooterWrapper>
       <FooterMainNavWrapper>
         <FooterMainNavInner>
-          {footerMainNav.map((item, index) => (
-            <FooterMainNavLink key={index} href={item.href}>
-              {item.title}
-            </FooterMainNavLink>
-          ))}
+          <NavLinkGroup>
+            {footerMainNav.map((item, index) => (
+              <FooterMainNavLink
+                key={index}
+                href={item.href}
+                isLast={index === footerMainNav.length - 1}
+              >
+                {item.title}
+              </FooterMainNavLink>
+            ))}
+          </NavLinkGroup>
         </FooterMainNavInner>
       </FooterMainNavWrapper>
     </FooterWrapper>
