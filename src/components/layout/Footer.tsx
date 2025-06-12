@@ -50,6 +50,10 @@ const FooterMainNavLink = styled.a<{ isLast?: boolean }>`
   // }
 `;
 
+const FooterInfoWrapper = styled.div`
+  padding: 20px 0px 70px 0px;
+`;
+
 interface FooterMainNavItem {
   href: string;
   title: string;
@@ -85,7 +89,9 @@ export default function Footer() {
           <FooterFamilySiteSelect />
         </FooterMainNavInner>
       </FooterMainNavWrapper>
-      <FooterComInfo />
+      <FooterInfoWrapper>
+        <FooterComInfo />
+      </FooterInfoWrapper>
     </FooterWrapper>
   );
 }
