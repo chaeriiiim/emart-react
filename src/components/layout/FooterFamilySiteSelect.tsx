@@ -72,9 +72,6 @@ const DropdownItem = styled.li`
 `;
 
 export default function FooterFamilySiteSelect() {
-  {
-    /* footer 사이트 select box */
-  }
   const [open, setOpen] = useState(false);
 
   const toggleDropdown = () => setOpen((prev) => !prev);
