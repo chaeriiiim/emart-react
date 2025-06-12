@@ -1,3 +1,4 @@
+import FooterComInfo from "./FooterComInfo";
 import FooterFamilySiteSelect from "./FooterFamilySiteSelect";
 
 import styled from "styled-components";
@@ -84,6 +85,7 @@ export default function Footer() {
           <FooterFamilySiteSelect />
         </FooterMainNavInner>
       </FooterMainNavWrapper>
+      <FooterComInfo />
     </FooterWrapper>
   );
 }
