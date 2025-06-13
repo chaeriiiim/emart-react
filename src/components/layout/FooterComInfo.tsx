@@ -13,9 +13,11 @@ export default function FooterComInfo() {
       <p style={{ fontSize: "12px", fontWeight: "bold", lineHeight: "23px" }}>
         (주) 에스에스지닷컴
       </p>
-      <div>
+      <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
         <p style={{ fontSize: "24px" }}>1577-3419</p>
         <LinkButton href="#" title="전화문의 전 클릭" />
+        <LinkButton href="#" title="1:1 고객센터톡" />
+        <p style={{ fontSize: "12px" }}>고객센터/전자금융거래분쟁처리</p>
       </div>
     </div>
   );
