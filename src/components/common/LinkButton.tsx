@@ -13,6 +13,7 @@ const ButtonStyled = styled.a`
   font-size: 12px;
   border-radius: 4px;
   background-color: white;
+  line-height: 19px;
 `;
 
 const Arrow = styled.span`
