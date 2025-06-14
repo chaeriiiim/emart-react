@@ -18,6 +18,10 @@ const CustomerServiceWrapper = styled.div`
   align-items: center;
 `;
 
+const CompanyNumber = styled.p`
+  font-size: 24px;
+`;
+
 const CompanyDetailsGroup = styled.div`
   margin-top: 12px;
 `;
@@ -43,7 +47,7 @@ export default function FooterCompanyInfo() {
       <CompanyName>(주) 에스에스지닷컴</CompanyName>
 
       <CustomerServiceWrapper>
-        <p style={{ fontSize: "24px" }}>1577-3419</p>
+        <CompanyNumber>1577-3419</CompanyNumber>
         <LinkButton href="#" title="전화문의 전 클릭" />
         <LinkButton href="#" title="1:1 고객센터톡" />
         <p style={{ fontSize: "12px" }}>고객센터/전자금융거래분쟁처리</p>
@@ -66,6 +70,12 @@ export default function FooterCompanyInfo() {
           <LinkButton href="#" title="소비자분쟁해결기준" />
         </ExtraLinks>
       </CompanyDetailsGroup>
+
+      <div style={{ marginTop: "24px" }}>
+        <p style={{ fontSize: "12px", fontWeight: "bold" }}>
+          SSG.COM 호스팅서비스 사업자:(주)에스에스지닷컴
+        </p>
+      </div>
     </FooterCompanyInfoWrapper>
   );
 }
