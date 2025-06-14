@@ -1,12 +1,9 @@
-// FooterComInfo.tsx
-
 import styled from "styled-components";
 import LinkButton from "../common/LinkButton";
 
 const FooterCompanyInfoWrapper = styled.div`
   width: 1280px;
   margin: 0 auto;
-  padding-bottom: 24px;
 `;
 
 const CompanyName = styled.p`
