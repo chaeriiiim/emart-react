@@ -75,6 +75,11 @@ export default function FooterCompanyInfo() {
         <p style={{ fontSize: "12px", fontWeight: "bold" }}>
           SSG.COM 호스팅서비스 사업자 : (주)에스에스지닷컴
         </p>
+        <p style={{ fontSize: "10px", color: "#777", lineHeight: "23px" }}>
+          (주)에스에스지닷컴 사이트의 상품/판매자/쇼핑정보,컨텐츠,UI 등에 대한
+          무단 복제, 전송, 배포, 스크래핑 등의 행위는 저작권법, 콘텐츠사업
+          진흥법 등에 의하여 엄격히 금지됩니다.
+        </p>
       </div>
     </FooterCompanyInfoWrapper>
   );
