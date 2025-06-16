@@ -73,7 +73,7 @@ export default function FooterCompanyInfo() {
 
       <div style={{ marginTop: "24px" }}>
         <p style={{ fontSize: "12px", fontWeight: "bold" }}>
-          SSG.COM 호스팅서비스 사업자:(주)에스에스지닷컴
+          SSG.COM 호스팅서비스 사업자 : (주)에스에스지닷컴
         </p>
       </div>
     </FooterCompanyInfoWrapper>
