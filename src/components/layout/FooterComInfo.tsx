@@ -70,7 +70,7 @@ export default function FooterCompanyInfo() {
           <LinkButton href="#" title="소비자분쟁해결기준" />
         </ExtraLinks>
       </CompanyDetailsGroup>
-
+      {/* 리팩토링 하기 */}
       <div style={{ marginTop: "24px" }}>
         <p style={{ fontSize: "12px", fontWeight: "bold" }}>
           SSG.COM 호스팅서비스 사업자 : (주)에스에스지닷컴
